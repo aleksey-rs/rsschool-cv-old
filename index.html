@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="nav_list">
+            <li>
+                <a href="#">ABOUT MYSELF</a>
+            </li>
+            <li>
+                <a href="#">EDUCATION</a>
+            </li>
+            <li>
+                <a href="#">ENGLISH LEVEL</a>
+            </li>
+            <li>
+                <a href="#">SKILLS</a>
+            </li>
+            <li>
+                <a href="#">SAMPLE CODE</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="wrapper">
+        <div class="wrapper-mid">
+          <div id="paper">
+                <div id="paper-mid">
+                    <section>
+                        <div class="entry">
+                            <!-- Begin Image -->
+                            <img class="portrait" src="./img/image.jpg" alt="Aleksey Khamiakov" />
+                            <!-- End Image -->
+                            <!-- Begin Personal Information -->
+                            <div class="self">
+                              <h1 class="name">Aleksey Khamiakov</h1>
+                              <ul>
+                                <li class="ad">Belarus, Minsk</li>
+                                <li class="mail">Email: alekseyrs65@gmail.com</li>
+                                <li class="skype">Skype: scarabey01</li>
+                                <li class="vk">Vk: vk.com/tocker</li>
+                              </ul>
+                            </div>
+                            <!-- End Personal Information -->
+                          </div>
+                    </section>
+                    <!-- Begin 1st Row -->
+                    <section>
+                        <div class="entry">
+                            <h2>ABOUT MYSELF</h2>
+                            <p>I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.</p>
+                          </div>
+                    </section>
+                    <!-- End 1st Row -->
+                    <!-- Begin 2nd Row -->
+                    <section>
+                        <div class="entry">
+                            <h2>EDUCATION</h2>
+                            <div class="content">
+                              <h3>Sep 2009 - Jun 2013</h3>
+                              <p>College of Entrepreneurship, Minsk <br />
+                                <em>Master in software engineer</em></p>
+                            </div>
+                            <div class="content">
+                              <h3>Sep 2013 - Jun 2017</h3>
+                              <p>Belarusian State University of Informatics and Radioelectronics, Minsk <br />
+                                <em>Bachelor of Science in software</em></p>
+                            </div>
+                          </div>
+                    </section>
+                    <!-- End 2nd Row -->
+                    <!-- Begin 3rd Row -->
+                    <section>
+                        <div class="entry">
+                            <h2>ENGLISH LEVEL</h2>
+                            <div class="content">
+                              <p>B2</p>
+                            </div>
+                          </div>
+                    </section>
+                    <!-- End 3rd Row -->
+                    <!-- Begin 4th Row -->
+                    <section>
+                        <div class="entry">
+                            <h2>SKILLS</h2>
+                            <div class="content">
+                              <h3>Software Knowledge</h3>
+                              <ul class="skills">
+                                <li>Prestashop</li>
+                                <li>Magento</li>
+                                <li>Drupal</li>
+                                <li>IDE</li>
+                                <li>Git</li>
+                                <li>OOP</li>
+                                <li>Api Integration</li>
+                                <li>Commercial experience</li>
+                                <li>Server administration</li>
+                              </ul>
+                            </div>
+                            <div class="content">
+                              <h3>Languages</h3>
+                              <ul class="skills">
+                                <li>CSS/XHTML</li>
+                                <li>PHP</li>
+                                <li>JavaScript</li>
+                                <li>C++</li>
+                                <li>Sql</li>
+                              </ul>
+                            </div>
+                          </div>
+                    </section>
+                    <!-- End 4th Row -->
+                    <!-- Begin 5rd Row -->
+                    <section>
+                        <div class="entry">
+                            <h2>SAMPLE CODE</h2>
+                            <div class="content"> 
+                                <div class="code">
+                                    <pre>
+                                        <code>
+                                          new Ajax.Request(url, {
+                                              method: 'get',
+                                                  onComplete: function(transport){
+                                                      if(transport.status==200){
+                                                          if(transport.responseText!=0){
+                                                              var MESSAGE = ''; var i=1;
+                                                              var ERROR = transport.responseText.unescapeHTML().evalJSON();
+                                                              $H(ERROR).each(function(error){
+                                                                  MESSAGE += i +". "+error.value;
+                                                                  i++;
+                                                              });
+                                                              fAlert("", __(MESSAGE));     
+                                                          }
+                                                      }
+                                                  }.bind(this)
+                                          });    
+                                    </code>
+                                  </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                      <!-- End 5rd Row -->
+                  </div>
+          </div>
+        </div>
+        <footer>
+            <div class="footer_list">
+                <div class="logo_rs">
+                    <a href="https://rs.school/" class="logo_rs">
+                      <img src="./img/logo-rs.svg" alt="rs-school" class="logo_rs"/>
+                    </a>
+                  </div>
+                  <div class="git">
+                    <a href="https://github.com/aleksey-rs" class="git">
+                      <img src="./img/git.png" alt="git" class="git" />
+                    </a>
+                  </div>     
+            </div>
+        </footer>
+      </div>
+</main>
+</body>
+</html>
